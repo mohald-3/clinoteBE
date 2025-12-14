@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(py -m pip install:*)",
+      "Bash(if [ -f .gitignore ])",
+      "Bash(then echo \"✅ .gitignore exists\")",
+      "Bash(cat:*)",
+      "Bash(else echo \"⚠️ .gitignore not found\")",
+      "Bash(fi)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
+    ]
+  }
+}
